@@ -1,0 +1,132 @@
+.aboutcon{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width:100% ;
+    position: sticky;
+    color: bisque;
+}
+.aboutcon_person, .aboutcon_detai{
+    width: 50%;
+
+}
+.aboutcon_person {
+    h3{
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--yellow-theme-main-color);
+    }
+}
+.hhh{
+    padding-top: 20px;
+}
+p{
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 1.8rem;
+    line-height: 1.65;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--yellow-theme-main-color);
+}
+ul > li{
+    line-height: 1rem;
+    margin-bottom: 15px;
+}
+span.till, span.val{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-bottom: 2px  solid var(--yellow-theme-main-color);
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    padding-bottom: 5px;
+    color: var(--yellow-theme-sub-text-color);
+}
+span.val{
+    border: none;
+}
+.aboutcon_detai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    .aboutcon_inner{
+        width: 350px;
+        height: 350px;
+        background: radial-gradient(180px, var(--yellow-theme-main-color), transparent 90%);
+        position: relative;
+        border-radius: 50%;
+        border: 1.5px solid var(--yellow-theme-main-color);
+        animation: rotation 10s linear 1s infinite;
+
+        div:nth-child(1){
+            position: absolute;
+            top: -15%;
+            left: 38%;
+        }
+        div:nth-child(2){
+            position: absolute;
+            right: -11%;
+            top: 40%;
+        }
+        div:nth-child(3){
+            position: absolute;
+            bottom: -12%;
+            left: 40%;
+        }
+        div:nth-child(4){
+            position: absolute;
+            left: -12%;
+            top: 40%;
+        }
+    }
+}
+
+@keyframes rotation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media only screen and (max-width : 768px) {
+   .aboutcon{
+    flex-direction: column;
+   }
+
+
+ .aboutcon_person, .aboutcon_detai{
+        width: 100px;
+    }
+   .aboutcon_detai{
+    margin: 10px 0px;
+
+    & .aboutcon_inner{
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(120px, var(--yellow-theme-main-color), transparent 120%);
+
+        div:nth-child(1){
+            position: absolute;
+            top: -9%;
+            left: 41%;
+        }
+        div:nth-child(2){
+            position: absolute;
+            right: -8%;
+            top: 41.5%;
+        }
+        div:nth-child(3){
+            position: absolute;
+            bottom: -10%;
+            left: 41%;
+        }
+        div:nth-child(4){
+            position: absolute;
+            left: -8%;
+            top: 41%;
+        }
+    }
+   }
+}

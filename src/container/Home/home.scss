@@ -1,0 +1,73 @@
+.home{
+    position: relative;
+    color: beige;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.homee{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: var(--yellow-theme-main-color);
+    margin: 0;
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 10rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingEffectAnimation 2.3s steps(30,end);
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+button{
+    cursor: pointer;
+    padding: 10px 70px;
+    font-size: 2rem;
+    background: transparent;
+    color: var(--yellow-theme-main-color);
+    border: 1.5px solid var(--yellow-theme-main-color);
+    border-radius: 10px;
+    font-weight: 500;
+
+    &:hover{
+        background: var(--yellow-theme-main-color);
+        color: black;
+    }
+}
+
+
+@media only screen and (max-width : 550px) {
+.homee h1{
+    font-size: 3rem;
+    line-height: 5rem;
+}
+}
+@media only screen and (min-width : 551px) and (max-width : 768px) {
+    .homee h1{
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+}
+@media only screen and (min-width : 769px)and (max-width : 990px) {
+    .homee h1{
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+}
+@keyframes typingEffectAnimation {
+    from {
+        width: 0;
+    }
+    to{
+        width: 100px;
+    }
+}
