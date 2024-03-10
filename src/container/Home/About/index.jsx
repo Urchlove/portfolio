@@ -12,10 +12,6 @@ const personalDetails =[
         value: "Uche Gloria Anthony"
     },
     {
-        label: "Age:",
-        value: "27"
-    },
-    {
         label: "Address:",
         value: "Abuja Nigeria"
     },
